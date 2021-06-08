@@ -1,0 +1,10 @@
+/svg/
+/.vscode/
+/css/_fonts.less/
+/css/_variables.less/
+/css/_mixins.less/
+/css/_header.less/
+/css/_navigation.less/
+/css/_button.less/
+/css/_form.less/
+/css/_footer.less/
