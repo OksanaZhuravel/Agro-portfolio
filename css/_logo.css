@@ -1,0 +1,33 @@
+.logo {
+  width: 100px;
+  height: 130px;
+  background-color: #fcdb5a;
+  border: 5px solid #fcdb5a;
+  text-decoration: none;
+}
+.logo:hover {
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+}
+.logo:active {
+  background-color: #2ed658;
+  border: 5px solid #2ed658;
+}
+.logo__text {
+  font-family: 'lato', Arial, sans-serif;
+  color: #4f4a37;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.logo__text::before {
+  content: "";
+  display: block;
+  width: 53px;
+  height: 53px;
+  margin: 24px 24px 10px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(../img/logo.svg);
+}

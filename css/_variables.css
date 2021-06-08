@@ -1,16 +1,14 @@
-@import "mix.less";
-
 .body {
   width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: "opensan", Arial, sans-serif;
-  .mixs (14px, 23px, 400);
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 400;
   color: #0e0c0c;
   background-color: #f9f9f9;
-
 }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -23,6 +21,3 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   overflow: hidden;
 }
-
-
-// @media (max-width: 480px) {}

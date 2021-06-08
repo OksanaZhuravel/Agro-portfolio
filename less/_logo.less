@@ -1,0 +1,38 @@
+@import "mix.less";
+
+.logo {
+  width: 100px;
+  height: 130px;
+  background-color: #fcdb5a;
+  border: 5px solid #fcdb5a;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+  }
+
+  &:active {
+    background-color: #2ed658;
+    border: 5px solid #2ed658;
+  }
+
+  &__text {
+    font-family: 'lato', Arial, sans-serif;
+    color: #4f4a37;
+    .mixs(20px, 20px, 700);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 53px;
+      height: 53px;
+      margin: 24px 24px 10px 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      background-image: url(../img/logo.svg);
+      // background-color: #4f4a37;
+    }
+  }
+}

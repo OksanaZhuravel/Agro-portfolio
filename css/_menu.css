@@ -1,0 +1,50 @@
+.menu input[type="checkbox"]:checked ~ .navigation__list--mobily {
+  visibility: visible;
+  left: 0;
+  height: auto;
+}
+.menu__input {
+  visibility: hidden;
+}
+.menu__label {
+  display: none;
+}
+.menu__btn,
+.menu__btn::before,
+.menu__btn::after {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  width: 35px;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: 0.25s;
+}
+.menu__btn::before {
+  content: '';
+  top: -8px;
+  left: 0;
+}
+.menu__btn::after {
+  content: '';
+  top: 8px;
+  left: 0;
+}
+@media (max-width: 480px) {
+  .menu input[type="checkbox"]:checked ~ .menu__label > span {
+    transform: rotate(45deg);
+  }
+  .menu input[type="checkbox"]:checked ~ .menu__label > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .menu input[type="checkbox"]:checked ~ .menu__label > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .menu__label {
+    display: block;
+    margin: 0 0 0 5px;
+  }
+}
