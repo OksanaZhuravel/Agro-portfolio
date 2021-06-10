@@ -2,9 +2,10 @@
 /.vscode/
 /css/_fonts.css/
 /css/_variables.css/
-/css/_mixins.css/
+/css/mix.css/
 /css/_header.css/
 /css/_navigation.css/
 /css/_button.css/
+/css/_product.css/
 /css/_form.css/
 /css/_footer.css/
