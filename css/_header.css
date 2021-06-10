@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  min-height: 1631px;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #efefef;
+  text-align: center;
+}
+.header--fon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: url("../img/rectangle_1_2737.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header__wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+}
+.header__navigation {
+  margin: 38px 435px 0 50px;
+}
+.header__logo {
+  margin: -15px 0 0 207px;
+}
+.header__title {
+  max-width: 525px;
+  margin: 128px 0 187px 212px;
+  font-family: "storytella", Arial, sans-serif;
+  font-size: 170px;
+  line-height: 200px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+.header__product {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
