@@ -1,0 +1,84 @@
+@import "mix.less";
+
+.food {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  padding: 0 0 0 213px;
+
+  &__fon {
+    width: 100%;
+    max-height: 693px;
+    object-fit: cover;
+    background-image: url("../img/fon1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #252a2d;
+  }
+
+  &__button {
+    margin: 48px 0 108px 0;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__img {
+    display: block;
+    width: 292px;
+    height: 221px;
+    background-color: #21e5e5;
+  }
+
+  &__item {
+    max-width: 185px;
+    margin: 39px 0 20px 0;
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (18px, 23px, 700);
+    color: #333333;
+  }
+
+  &__list {
+    width: 292px;
+    height: 221px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: #ffffff;
+
+  }
+
+  &__txt {
+    max-width: 215px;
+    color: #666666;
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 530px;
+    color: #c5c5c5;
+  }
+
+  &__title {
+    max-width: 350px;
+    margin: 126px 0 27px 0;
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (40px, 50px, 900);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__desc {
+    font-weight: 100;
+  }
+}

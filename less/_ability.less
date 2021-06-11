@@ -1,0 +1,111 @@
+@import "mix.less";
+
+.ability {
+
+  &__wrap {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 0 0 30px;
+  }
+
+  &__link {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 52px 0 52px;
+    // margin: 0 25px;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 53px;
+      height: 52px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      background-image: url(../img/forma1.svg);
+      // background-color: #4f4a37;
+    }
+
+    &:nth-child(2)::before {
+      width: 52px;
+      height: 54px;
+      background-image: url(../img/forma2.svg);
+    }
+
+    &:nth-child(3)::before {
+      width: 59px;
+      height: 53px;
+      background-image: url(../img/forma3.svg);
+    }
+
+    &:nth-child(4)::before {
+      width: 57px;
+      height: 49px;
+      background-image: url(../img/forma4.svg);
+    }
+
+    &:nth-child(5)::before {
+      width: 53px;
+      height: 57px;
+      background-image: url(../img/forma5.svg);
+    }
+
+    &:nth-child(6)::before {
+      width: 59px;
+      height: 56px;
+      background-image: url(../img/forma6.svg);
+    }
+
+    &--progress {
+      padding: 0 60px 0 60px;
+      flex-flow: row wrap;
+
+      &:nth-child(1)::before {
+        width: 70px;
+        height: 69px;
+        background-image: url(../img/icon1.png);
+      }
+
+      &:nth-child(2)::before {
+        width: 68px;
+        height: 60px;
+        background-image: url(../img/icon2.png);
+      }
+
+      &:nth-child(3)::before {
+        width: 55px;
+        height: 76px;
+        background-image: url(../img/icon3.png);
+      }
+
+      &:nth-child(4)::before {
+        width: 70px;
+        height: 52px;
+        background-image: url(../img/icon4.png);
+      }
+    }
+  }
+
+  &__title {
+    .mixs (16px, 50px, 700);
+    color: #333333;
+
+    &--progress {
+      color: #555555;
+    }
+  }
+
+  &__text {
+    max-width: 115px;
+    .mixs (50px, 50px, 800);
+    text-transform: uppercase;
+    color: #2e211d;
+  }
+}

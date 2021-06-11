@@ -1,0 +1,58 @@
+@import "mix.less";
+
+.servic {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  font-family: "raleway", Arial, sans-serif;
+  .mixs (16px, 50px, 700);
+  text-align: center;
+
+  &__ability {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 140px 0;
+
+  }
+
+  &__desc {
+    font-weight: 100;
+  }
+
+  &__slogan {
+    width: 100%;
+    min-height: 535px;
+    margin: 0 0 180px 0;
+    background-image: url(../img/text.png),
+      url(../img/rectangle28.png),
+      url(../img/rectangle284795.png);
+    background-size: 512px 425px,
+      329px 492px,
+      719px 492px;
+    background-repeat: no-repeat;
+    background-position: 864px 86px,
+      644px 42px,
+      216px 78px;
+  }
+
+  &__text {
+    margin: 0 0 95px 0;
+    max-width: 550px;
+    font-family: "opensan", Arial, sans-serif;
+    .mixs (18px, 25px, 300);
+    color: #b3b3b3;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+    .mixs (40px, 50px, 900);
+    color: #333333;
+    text-transform: uppercase;
+  }
+}
