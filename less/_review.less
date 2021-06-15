@@ -1,0 +1,63 @@
+@import "mix.less";
+
+.review {
+  font-family: "raleway", Arial, sans-serif;
+  .mixs (18px, 23px, 700);
+  color: #ffffff;
+
+  &__desc {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+
+  &__foto {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #fcdb5a;
+    margin: 0 22px 0 22px;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0;
+  }
+
+  &__name {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+
+  &__position {
+    font-weight: 400;
+    margin: 0 560px 0 0;
+  }
+
+  &__text {
+    max-width: 985px;
+    text-align: left;
+    margin: 0 0 45px 20px;
+    font-family: Times, sans-serif;
+    .mixs (25px, 30px, 400);
+    font-style: italic;
+
+    &::before {
+      content: " “ ";
+      display: block;
+      font-size: 100px;
+      font-weight: 700;
+      color: #fcdb5a;
+      position: absolute;
+      top: 15px;
+      left: 216px;
+    }
+  }
+
+  &__pagination {
+    margin: 0 0 15px 0;
+  }
+}

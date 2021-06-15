@@ -1,0 +1,44 @@
+@import "mix.less";
+
+.blog {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  &__text {
+    margin: 0 0 55px 0;
+    max-width: 570px;
+    font-family: "opensan", Arial, sans-serif;
+    .mixs (18px, 25px, 300);
+    color: #b3b3b3;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (40px, 50px, 900);
+    color: #333333;
+    margin: 130px 0 20px 0;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-weight: 100;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 0 118px 0;
+  }
+
+}

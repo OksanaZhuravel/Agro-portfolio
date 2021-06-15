@@ -1,0 +1,65 @@
+@import "mix.less";
+
+
+.test {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #a7a7a1;
+
+  &__text {
+    display: none;
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (18px, 23px, 700);
+    color: #ffffff;
+  }
+
+  &__wrap {
+    width: 400px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/test1.png);
+    background-size: 400px 370px;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    &:nth-child(3) {
+      background-image: url(../img/test2.png);
+    }
+
+    &:nth-child(4) {
+      background-image: url(../img/test3.png);
+    }
+
+    &:nth-child(5) {
+      background-image: url(../img/test4.png);
+    }
+
+    &:nth-child(6) {
+      background-image: url(../img/test5.png);
+    }
+
+    &:nth-child(7) {
+      background-image: url(../img/test6.png);
+    }
+
+    &:nth-child(8) {
+      background-image: url(../img/test7.png);
+    }
+
+    &:nth-child(9) {
+      background-image: url(../img/test8.png);
+    }
+
+    &:hover {
+      filter: brightness(70%);
+    }
+
+    &:hover .test__text {
+      display: flex;
+    }
+  }
+}

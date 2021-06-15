@@ -1,24 +1,29 @@
 @import "mix.less";
 
-.progress {
+.view {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
   align-items: center;
-  margin: 130px 0 0 0;
-  font-family: "raleway", Arial, sans-serif;
-  .mixs (16px, 50px, 700);
   text-align: center;
+  box-sizing: border-box;
 
-  &__ability {
+  &__review {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 128px 0;
+    flex-flow: column wrap;
+  }
+
+  &__fon {
+    width: 100%;
+    min-height: 714px;
+    object-fit: cover;
+    background-image: url(../img/fon4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #252a2d;
   }
 
   &__desc {
@@ -34,9 +39,12 @@
   }
 
   &__title {
-    margin: 0 0 25px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "raleway", Arial, sans-serif;
     .mixs (40px, 50px, 900);
-    color: #333333;
+    color: #ffffff;
+    margin: 145px 0 5px 47px;
     text-transform: uppercase;
   }
 }

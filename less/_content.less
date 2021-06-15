@@ -1,0 +1,66 @@
+@import "mix.less";
+
+.content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 370px;
+  height: 396px;
+  background-color: #fcdb5a;
+  margin: 0 15px;
+  position: relative;
+
+  &__data {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (25px, 50px, 800);
+    width: 61px;
+    height: 65px;
+    background-color: #fcdb5a;
+  }
+
+  &__day {
+    display: block;
+    height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  &__months {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #9a8841;
+  }
+
+
+  &__foto {
+    width: 370px;
+    height: 396px;
+    background-color: #fcdb5a;
+  }
+
+  &__text {
+    font-family: "raleway", Arial, sans-serif;
+    .mixs (18px, 50px, 700);
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 0 0 -7px 0;
+    font-size: 12px;
+    color: #ddc051;
+  }
+
+  &__wrap {
+    position: absolute;
+    bottom: 13px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
