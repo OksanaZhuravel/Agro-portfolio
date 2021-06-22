@@ -1,0 +1,42 @@
+@import "mix.less";
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 55px 0 52px 0;
+  font-family: "opensan", Arial, sans-serif;
+  .mixs(13px, 15px, 400);
+  color: #7e7e7e;
+
+  &__copy {
+    margin: 0 153px 0 0;
+  }
+
+  &__text {
+    margin: 0 0 0 15px;
+  }
+
+  &__item {
+    color: #7e7e7e;
+    text-decoration: none;
+    border-right: 2px solid #7e7e7e;
+    margin: 0 5px 0 0;
+    padding: 0 5px 0 0;
+    box-sizing: border-box;
+
+    &:nth-child(3) {
+      border: none;
+    }
+
+    &:hover {
+      color: #fcdb5a;
+    }
+
+    &:active {
+      color: #2ed658;
+    }
+  }
+}

@@ -3,13 +3,49 @@
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0 0 105px 0;
+  margin: 0 0 109px 0;
   background-color: #ffffff;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    list-style: none;
+    width: 100%;
+    color: #aaaaaa;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+
+    &:active {
+      color: #2ed658;
+      border-color: #2ed658;
+    }
+
+    &:hover {
+      color: #fcdb5a;
+      border-color: #fcdb5a;
+    }
+  }
 
   &__link {
     display: block;
     text-decoration: none;
     margin: 0 45px 0 45px;
+
+    &--footer {
+      line-height: 30px;
+      display: block;
+      text-decoration: none;
+      margin: 0 0 1px 0;
+    }
 
     &:hover {
       filter: opacity(0.5);

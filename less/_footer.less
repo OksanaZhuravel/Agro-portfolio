@@ -1,0 +1,72 @@
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: #333333;
+
+  &__contact {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  &__links {
+    margin: 0 0 0 200px;
+
+    &::before {
+      content: " ";
+      width: 670px;
+      height: 1px;
+      background-color: #464646;
+      display: block;
+      margin: 0 0 35px 0;
+    }
+  }
+
+  &__map {
+    position: relative;
+    width: 615px;
+    height: 503px;
+    background-color: #ffffff;
+    object-fit: cover;
+    background-image: url("../img/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 214px;
+    left: 303px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fcdb5a;
+    border: 5px solid #fcdb5a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 31px 31px;
+    background-image: url(../img/logomini.svg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -5px;
+      bottom: -25px;
+      border: 20px solid transparent;
+      border-left: 15px solid #fcdb5a;
+    }
+
+  }
+
+  &__partners {
+    margin: 30px 197px 0 0;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  &__social {
+    display: flex;
+    margin: 0 0 0 215px;
+  }
+}

@@ -1,0 +1,75 @@
+@import "mix.less";
+
+.social {
+  width: 100%;
+
+  &__wrap {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px 0 0 0;
+  }
+
+  &__address {
+    color: #ffffff;
+    margin: 0 75px 0 0;
+  }
+
+  &__text {
+    font-family: "raleway", Arial, sans-serif;
+    .mixs(12px, 25px, 700);
+    text-transform: uppercase;
+    color: #fde557;
+    margin: 0 0 10px 0;
+  }
+
+  &__item {
+    margin: 0 10px 0 0;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--twitter {
+      width: 23px;
+      height: 16px;
+      background-image: url("../img/tw.svg");
+    }
+
+    &--facebook {
+      width: 9px;
+      height: 17px;
+      background-image: url("../img/fac.svg");
+    }
+
+    &--linkedin {
+      width: 17px;
+      height: 17px;
+      background-image: url("../img/linc.svg");
+    }
+
+    &:hover {
+      transform: scale(1.5);
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 49px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__number {
+    color: #c4c4c4;
+    margin: 0 123px 0 0;
+  }
+}
