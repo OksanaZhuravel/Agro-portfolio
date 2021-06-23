@@ -71,9 +71,14 @@
       &--mobily {
         visibility: hidden;
         margin: 0 auto;
-        // height: auto;
-        width: 380px;
-        flex-flow: column wrap;
+        width: 300px;
+        flex-direction: column;
+        height: 0;
+      }
+
+      &--footer {
+        margin: 0;
+
       }
     }
 
@@ -81,12 +86,13 @@
       font-size: 16px;
       text-align: center;
       background-color: gray;
-      margin: 0 20px 0 20px;
+      margin: 0;
       opacity: 0.75;
+      justify-content: center;
 
       &--footer {
         margin: 0 10px 0 10px;
-        font-size: 18px;
+        font-size: 10px;
         background-color: transparent;
       }
     }

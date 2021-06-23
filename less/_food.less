@@ -9,7 +9,7 @@
 
   &__fon {
     width: 100%;
-    max-height: 693px;
+    height: 693px;
     object-fit: cover;
     background-image: url("../img/fon1.png");
     background-size: cover;
@@ -54,7 +54,6 @@
     flex-flow: column wrap;
     align-content: center;
     background-color: #ffffff;
-
   }
 
   &__txt {
@@ -80,5 +79,39 @@
 
   &__desc {
     font-weight: 100;
+  }
+}
+
+@media (max-width: 480px) {
+  .food {
+    padding: 0 0 0 5px;
+
+    &__fon {
+      height: auto;
+      background-image: none;
+    }
+
+    &__button {
+      margin: 20px 0 20px 0;
+    }
+
+    &__content {
+      justify-content: center;
+    }
+
+    &__list {
+      height: 150px;
+    }
+
+    &__item {
+      margin: 10px 0 10px 0;
+      font-size: 12px;
+    }
+
+    &__title {
+      text-align: center;
+      margin: 50px 0 10px 0;
+      font-size: 20px;
+    }
   }
 }

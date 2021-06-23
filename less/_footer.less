@@ -56,7 +56,6 @@
       border: 20px solid transparent;
       border-left: 15px solid #fcdb5a;
     }
-
   }
 
   &__partners {
@@ -68,5 +67,35 @@
   &__social {
     display: flex;
     margin: 0 0 0 215px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    &__links {
+      margin: 0 0 0 50px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__map {
+      display: none;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__partners {
+      margin: 0;
+    }
+
+    &__social {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 0 0 50px;
+    }
   }
 }

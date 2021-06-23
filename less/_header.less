@@ -24,7 +24,6 @@
 
   &__logo {
     margin: -10px 0 0 207px;
-
   }
 
   &__title {
@@ -53,8 +52,41 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
-
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .header {
+    min-height: auto;
+
+    &__wrap {
+      background-color: #222b3a;
+    }
+
+    &__navigation {
+      margin: 5px;
+    }
+
+    &__logo {
+      margin: 0 0 0 50%;
+    }
+
+    &__title {
+      width: 200px;
+      height: 160px;
+      background-size: 100%;
+      margin: 10px;
+    }
+
+    &__inner {
+      flex-flow: column wrap;
+    }
+
+    &__product {
+      justify-content: center;
+    }
+
+    &--fon {
+      background-image: none;
+    }
+  }
+}

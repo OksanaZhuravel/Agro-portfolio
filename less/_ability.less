@@ -1,7 +1,6 @@
 @import "mix.less";
 
 .ability {
-
   &__wrap {
     display: flex;
     flex-flow: column wrap;
@@ -106,5 +105,23 @@
     .mixs (50px, 50px, 800);
     text-transform: uppercase;
     color: #2e211d;
+  }
+}
+
+@media (max-width: 480px) {
+  .ability {
+    &__wrap {
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0 0 0 30px;
+    }
+
+    &__link {
+      padding: 0 10px 0 10px;
+    }
+
+    &__text {
+      width: 80%;
+    }
   }
 }
